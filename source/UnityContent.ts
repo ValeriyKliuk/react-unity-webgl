@@ -180,7 +180,7 @@ export default class UnityContent {
     });
     if (typeof _window.ReactUnityWebGL === "undefined")
       _window.ReactUnityWebGL = {};
-    _window.ReactUnityWebGL[eventName] = (parameter: any) =>
+    _window.ReactUnityWebGL[eventName] = (...parameter: any[]) =>
       eventCallback(parameter);
   }
 
