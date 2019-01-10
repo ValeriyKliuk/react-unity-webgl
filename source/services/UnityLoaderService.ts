@@ -27,9 +27,7 @@ export default class UnityLoaderService {
     this.unityLoaderScript.type = "text/javascript";
     this.unityLoaderScript.async = true;
     this.unityLoaderScript.src = source;
-    this.unityLoaderScript.onload = () => {
-      onLoad();
-    };
+    this.unityLoaderScript.onload = () => onLoad();
     this.documentHead.appendChild(this.unityLoaderScript);
   }
 }
